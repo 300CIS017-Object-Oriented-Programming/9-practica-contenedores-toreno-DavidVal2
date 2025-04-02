@@ -7,7 +7,7 @@
 
 using namespace std;
 
-void Torneo::registrarVideojuego() {
+void registrarVideojuego() {
     string nombre;
     cout << "Ingrese el nombre del videojuego: ";
     getline(cin, nombre);
@@ -50,7 +50,7 @@ void registrarJugador(){
     getline(cin, nivelRanking);
   }
 
-void Torneo::inscribirJugador() {
+void inscribirJugador() {
     string nickname, codigo;
 
     cout << "Ingrese el nickname del jugador: ";
@@ -85,5 +85,3 @@ void Torneo::inscribirJugador() {
     jugador->inscribirVideojuego(*juego); // Suponiendo que Jugador tiene inscribirVideojuego(Videojuego& juego)
     cout << "Jugador '" << nickname << "' inscrito exitosamente en el videojuego '" << juego->getNombre() << "'.\n";
 }
-
-
